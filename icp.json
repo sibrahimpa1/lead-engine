@@ -1,0 +1,24 @@
+{
+  "note": "Ideal customer profile and routing rules for the demo. Scores are computed in code from these weights.",
+  "industries": {"saas": 20, "fintech": 20, "logistics": 18, "manufacturing": 10, "insurance": 8, "healthcare": 6, "retail": 4, "media": 0, "agency": 2},
+  "employees": [[1, 19, 0], [20, 49, 6], [50, 199, 14], [200, 999, 20], [1000, 4999, 12], [5000, 1000000, 5]],
+  "countries": {"US": 10, "GB": 10, "DE": 10, "NL": 10, "SE": 8, "IE": 8, "FR": 6, "ES": 6, "IT": 6, "CZ": 4, "AU": 4},
+  "seniority": [["chief|ceo|coo|cro|cio|cfo|founder", 20], ["vp|vice president", 18], ["head", 16], ["director", 14], ["manager|lead", 8]],
+  "functions": [["revenue|revops|sales|growth|operations|ops|distribution|customer success", 8], ["it|technology|engineering|product", 3]],
+  "tech": {"hubspot": 8, "salesforce": 8, "segment": 3, "stripe": 2},
+  "intent": {"demo": 14, "pricing": 10, "webinar": 4, "blog": 0, "": 0},
+  "competitors": ["leadforge.example"],
+  "hot_threshold": 75,
+  "qualify_threshold": 45,
+  "routing": {
+    "territories": {"EMEA": ["DE", "GB", "NL", "SE", "IE", "FR", "ES", "IT", "CZ"], "NA": ["US", "CA"], "APAC": ["AU", "NZ", "SG"]},
+    "reps": {
+      "amira": {"name": "Amira H.", "territory": "EMEA", "capacity": 4},
+      "luka": {"name": "Luka P.", "territory": "EMEA", "capacity": 4},
+      "jordan": {"name": "Jordan T.", "territory": "NA", "capacity": 4},
+      "priya": {"name": "Priya S.", "territory": "NA", "capacity": 4},
+      "mateo": {"name": "Mateo R.", "territory": "ALL", "capacity": 3, "senior": true}
+    },
+    "unassigned_territory_owner": "mateo"
+  }
+}

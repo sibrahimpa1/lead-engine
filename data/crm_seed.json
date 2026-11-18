@@ -1,0 +1,38 @@
+{
+ "contacts": [
+  {
+   "id": "C-9001",
+   "email": "grace.lin@marrowsoft.example",
+   "firstname": "Grace",
+   "lastname": "Lin",
+   "jobtitle": "Sales Ops Lead",
+   "company_domain": "marrowsoft.example",
+   "owner": "amira",
+   "lifecycle": "lead"
+  },
+  {
+   "id": "C-9002",
+   "email": "ruud@quillpay.example",
+   "firstname": "Ruud",
+   "lastname": "Visser",
+   "jobtitle": "COO",
+   "company_domain": "quillpay.example",
+   "owner": "luka",
+   "lifecycle": "customer"
+  }
+ ],
+ "companies": [
+  {
+   "id": "CO-501",
+   "domain": "marrowsoft.example",
+   "name": "Marrowsoft Ltd",
+   "owner": "amira"
+  },
+  {
+   "id": "CO-502",
+   "domain": "quillpay.example",
+   "name": "QuillPay",
+   "owner": "luka"
+  }
+ ]
+}

@@ -1,0 +1,169 @@
+{
+ "brightlane.example": {
+  "name": "Brightlane Logistics GmbH",
+  "industry": "logistics",
+  "employees": 420,
+  "country": "DE",
+  "tech": [
+   "hubspot",
+   "shopware"
+  ]
+ },
+ "tallyfold.example": {
+  "name": "Tallyfold",
+  "industry": "fintech",
+  "employees": 180,
+  "country": "GB",
+  "tech": [
+   "salesforce",
+   "stripe"
+  ]
+ },
+ "orbitcrate.example": {
+  "name": "OrbitCrate Inc.",
+  "industry": "saas",
+  "employees": 95,
+  "country": "US",
+  "tech": [
+   "hubspot",
+   "segment"
+  ]
+ },
+ "kestrelhealth.example": {
+  "name": "Kestrel Health",
+  "industry": "healthcare",
+  "employees": 2600,
+  "country": "US",
+  "tech": [
+   "salesforce"
+  ]
+ },
+ "fennick.example": {
+  "name": "Fennick & Co",
+  "industry": "agency",
+  "employees": 12,
+  "country": "IE",
+  "tech": [
+   "hubspot"
+  ]
+ },
+ "marrowsoft.example": {
+  "name": "Marrowsoft Ltd",
+  "industry": "saas",
+  "employees": 640,
+  "country": "GB",
+  "tech": [
+   "hubspot",
+   "intercom"
+  ]
+ },
+ "quillpay.example": {
+  "name": "QuillPay",
+  "industry": "fintech",
+  "employees": 60,
+  "country": "NL",
+  "tech": [
+   "stripe"
+  ]
+ },
+ "dunmore.example": {
+  "name": "Dunmore Freight",
+  "industry": "logistics",
+  "employees": 1300,
+  "country": "US",
+  "tech": [
+   "salesforce"
+  ]
+ },
+ "lumenvale.example": {
+  "name": "Lumenvale Studios",
+  "industry": "media",
+  "employees": 35,
+  "country": "FR",
+  "tech": []
+ },
+ "cobaltrail.example": {
+  "name": "Cobalt Rail Systems",
+  "industry": "manufacturing",
+  "employees": 900,
+  "country": "DE",
+  "tech": [
+   "salesforce",
+   "sap"
+  ]
+ },
+ "pebbleworks.example": {
+  "name": "Pebbleworks",
+  "industry": "saas",
+  "employees": 240,
+  "country": "US",
+  "tech": [
+   "hubspot"
+  ]
+ },
+ "harborline.example": {
+  "name": "Harborline Shipping",
+  "industry": "logistics",
+  "employees": 75,
+  "country": "NL",
+  "tech": [
+   "hubspot"
+  ]
+ },
+ "sablemint.example": {
+  "name": "Sablemint",
+  "industry": "fintech",
+  "employees": 410,
+  "country": "US",
+  "tech": [
+   "salesforce",
+   "segment"
+  ]
+ },
+ "verdantly.example": {
+  "name": "Verdantly",
+  "industry": "retail",
+  "employees": 150,
+  "country": "ES",
+  "tech": [
+   "shopware"
+  ]
+ },
+ "arcpipe.example": {
+  "name": "ArcPipe Analytics",
+  "industry": "saas",
+  "employees": 55,
+  "country": "SE",
+  "tech": [
+   "hubspot"
+  ]
+ },
+ "leadforge.example": {
+  "name": "LeadForge",
+  "industry": "saas",
+  "employees": 300,
+  "country": "US",
+  "tech": [
+   "hubspot"
+  ]
+ },
+ "ironbark.example": {
+  "name": "Ironbark Insurance",
+  "industry": "insurance",
+  "employees": 3100,
+  "country": "AU",
+  "tech": [
+   "salesforce"
+  ]
+ },
+ "glasswing.example": {
+  "name": "Glasswing Payments",
+  "industry": "fintech",
+  "employees": 820,
+  "country": "GB",
+  "tech": [
+   "hubspot",
+   "stripe"
+  ]
+ }
+}
