@@ -70,7 +70,7 @@ function lead(id){
   const blocked=r.draft_problems.length>0;
   const draft=r.draft?`<div class="panel"><h3>First email (drafted by the model, checked by code)</h3><div class="note">Subject: ${esc(r.draft.subject)}</div><div class="mail">${esc(r.draft.body)}</div>${checks}
    <div class="btns"><button class="primary" ${blocked||st!=="pending_approval"?"disabled":""} onclick="act('${r.id}','approved')">Approve</button>
-   <button ${st!=="approved"?"disabled":""} onclick="act('${r.id}','sent')">Send</button><button ${st==="sent"||st==="pending_approval"&&!ST[r.id]?"disabled":""} onclick="act('${r.id}',null)">Reset</button></div>
+   <button ${st!=="approved"?"disabled":""} onclick="act('${r.id}','sent')">Send</button><button ${ST[r.id]?"":"disabled"} onclick="act('${r.id}',null)">Reset</button></div>
    <p class="note">${blocked?"Blocked: a person edits the draft before it can be approved.":st==="sent"?"Sent once. Sending the same text to the same lead again is refused (idempotency key).":"Nothing is sent until a person approves this exact text."}</p></div>`:
    `<div class="panel"><h3>No email</h3><p class="note">${r.score.disqualified.length?"Disqualified leads get no sales email.":!r.route.owner?"No owner yet, so no email.":"Not qualified: goes to the nurture list."}</p></div>`;
   return `<p><a href="#inbox">← Inbox</a></p><h1>${esc(l.first_name)} ${esc(l.last_name)} · ${esc(l.company)}</h1><p class="lede">${esc(l.title)} · ${esc(l.email)} · ${pill(st)}</p>
