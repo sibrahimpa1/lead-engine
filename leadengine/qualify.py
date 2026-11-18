@@ -32,8 +32,9 @@ class Firmographics:
 
 def _match(table: list, text: str) -> tuple:
     for pattern, pts in table:
-        if re.search(rf"\b({pattern})\b", text):
-            return pattern.split("|")[0], pts
+        m = re.search(rf"\b({pattern})\b", text)
+        if m:
+            return m.group(1), pts
     return None, 0
 
 

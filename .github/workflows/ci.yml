@@ -1,0 +1,33 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - os: ubuntu-24.04
+            python: "3.9"
+          - os: ubuntu-latest
+            python: "3.12"
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python }}
+      - run: pip install pytest
+      - name: Tests
+        run: python -m pytest -q
+      - name: Offline demo (synthetic leads, fake HubSpot, recorded drafts)
+        run: python -m leadengine demo --out out --site out/site/index.html
+      - name: Synthetic data rebuilds exactly
+        run: python data/make_synthetic.py && git diff --exit-code data/
